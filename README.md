@@ -1,30 +1,49 @@
-# v22update1
+# 📰 Tech Blockchain Africa — News Blog
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
+Welcome to the **TechBlockchainAfr** blog — a tech-focused news site sharing insights, events, and updates from across the Francophone tech ecosystem.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/croupiermaxfit/v0-v22update1)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/bpBlGvLbvRn)
+This project is built with **Next.js (App Router)**, styled with **Tailwind CSS**, and hosted on **Vercel**.
 
-## Overview
+> 🧪 Currently under development — stay tuned for more!
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+---
 
-## Deployment
+## 🚀 Live Preview
 
-Your project is live at:
+🌐 [blog.techblockchainafr.tech](https://blog.techblockchainafr.tech/)
 
-**[https://vercel.com/croupiermaxfit/v0-v22update1](https://vercel.com/croupiermaxfit/v0-v22update1)**
+---
 
-## Build your app
+## 🗂 Project Structure
 
-Continue building your app on:
-
-**[https://v0.dev/chat/projects/bpBlGvLbvRn](https://v0.dev/chat/projects/bpBlGvLbvRn)**
-
-## How It Works
-
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+```bash
+.
+├── app
+│   ├── actions
+│   │   └── newsletter.ts        # Handles newsletter signup logic
+│   ├── blog
+│   │   ├── loading.tsx          # Blog section loader
+│   │   └── page.tsx             # Blog landing page
+│   ├── equipe
+│   │   ├── loading.tsx          # Team page loader
+│   │   └── page.tsx             # Team info page
+│   ├── evenements
+│   │   ├── loading.tsx          # Events page loader
+│   │   ├── page.tsx             # Events list or overview
+│   │   ├── layout.tsx           # Layout specific to events section
+│   │   └── globals.css          # Section-specific styles
+│   ├── layout.tsx               # Global app layout
+│   └── page.tsx                 # Root landing page (homepage)
+│
+├── components                   # Reusable UI components
+├── hooks                        # Custom React hooks
+├── lib                          # Utility functions, API clients, etc.
+├── public                       # Static assets (logo, OG images, etc.)
+├── scripts                      # Automation or setup scripts
+├── styles                       # Global CSS or Tailwind config
+│
+├── README.md
+├── components.json              # Component registry (for visual builder?)
+├── next.config.mjs              # Next.js config
+├── package.json
+└── .gitignore
